@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CPA Club Forum">
+  <title>CPA Club Connect</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- BRANDING -->
+
+  <a href="https://cpa.club/" id="branding-container" class="branding"></a>
+
+  <!-- END BRANDING -->
+
+  <div class="wrapper">
+    <div id="top-container"></div>
+    <div id="branding-container-top" class="branding"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo-wrapper">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="./img/cpa-logo.png" srcset="./img/cpa-logo@2x.png 2x" width="190" height="29"
+                alt="CPA Club logo.">
+            </a>
+          </div>
+          <span>×</span>
+          <div class="header__partner-logo">
+            <a href="#">
+              <img src="./img/partner-logo.png" srcset="./img/partner-logo@2x.png 2x" width="90" height="25"
+                alt="CPA Club logo.">
+            </a>
+          </div>
+        </div>
+
+        <div class="header__search search">
+          <form action="" method="get" id="header-search-form">
+            <input name="search" placeholder="Поиск по форуму" type="search">
+            <button class="search__btn" type="submit">
+              <svg width="20" height="20" fill="currentColor">
+                <use xlink:href="./img/sprite.svg#search-btn"></use>
+              </svg>
+            </button>
+          </form>
+
+          <!-- add class 'active' to show the list below -->
+          <div class="search__results">
+            <ul class="search__results-list list-reset">
+              <li class="search__results-item">
+                <h3>Результаты поиска • <span class="search__results-count">3</span></h3>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="header__user-menu user-menu">
+          <div class="user-menu__lang-switcher">
+            <div class="user-menu__lang-switcher-wrapper">
+              <a class="user-menu__lang-link active" href="#">RU</a>
+              <a class="user-menu__lang-link" href="#">UA</a>
+              <a class="user-menu__lang-link" href="#">UK</a>
+            </div>
+          </div>
+          <div class="user-menu__unlogged">
+            <button type="button" class="user-menu__btn user-menu__btn--login open-popup login-btn"
+              data-value="#login">Вход</button>
+            <button type="button" class="user-menu__btn user-menu__btn--signup open-popup signup-btn"
+              data-value="#signup">Регистрация</button>
+          </div>
+          <div class="user-menu__logged active">
+            <div class="user-menu__alerts">
+              <button class="user-menu__alerts-btn" type="button">
+                <svg class="user-menu__alerts-btn-icon" width="16" height="20" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#bell"></use>
+                </svg>
+                <span class="user-menu__alerts-icon"></span>
+              </button>
+              <ul class="user-menu__alerts-list list-reset">
+                <li class="user-menu__alerts-item">
+                  <h3>Уведомления</h3>
+                </li>
+                <li class="user-menu__alerts-item active">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 1</a>
+                </li>
+                <li class="user-menu__alerts-item active">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 2</a>
+                </li>
+                <li class="user-menu__alerts-item">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 3</a>
+                </li>
+                <li class="user-menu__alerts-item">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 4</a>
+                </li>
+              </ul>
+            </div>
+            <div class="user-menu__user-block">
+              <div class="user-menu__avatar">
+                <a href="user-profile.html">
+                  <img src="./img/avatar.png" loading="lazy" width="30" height="30" alt="User avatar.">
+                </a>
+              </div>
+              <div class="user-menu__user-name">
+                <p>Владислав Минайчев</p>
+              </div>
+            </div>
+            <button class="user-menu__logout-btn logout-btn" type="button">
+              <svg width="24" height="24" fill="currentColor">
+                <use xlink:href="./img/sprite.svg#logout"></use>
+              </svg>
+              <span>Выход</span>
+            </button>
+          </div>
+          <button type="button" class="user-menu__nav-btn" aria-label="Открыть меню."></button>
+          <nav class="header__nav header-nav">
+            <div class="header-nav__content">
+              <ul class="header-nav__list list-reset">
+                <li class="header-nav__item header-nav__item--forum">
+                  <a class="header-nav__link" href="index.html">
+                    <h3>Форум</h3>
+                    <p>Классический форум для общения топов рынка</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--catalog">
+                  <a class="header-nav__link" href="catalog.html">
+                    <h3>Компании</h3>
+                    <p>Рейтинг компаний в отрасли</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--courses">
+                  <a class="header-nav__link" href="courses.html">
+                    <h3>Курсы</h3>
+                    <p>Обучающие материалы для будущих профессионалов IT</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--events">
+                  <a class="header-nav__link" href="events.html">
+                    <h3>Мероприятия</h3>
+                    <p>Информация о формате, программе, спикерах, шоу</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--blog">
+                  <a class="header-nav__link" href="blog.html">
+                    <h3>Блог</h3>
+                    <p>Последние новости, кейсы и тенденции</p>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="adblock adblock-220x320">
+                <iframe width="220" height="320" src="./img/banner-menu-295х430.png" frameborder="0"></iframe>
+                <!-- <a href="#" class="adblock__link">
+                    <img src="" width="220" height="320" alt="">
+                  </a> -->
+              </div>
+
+              <div class="adblock adblock-290x76">
+                <iframe width="290" height="76" src="./img/banner-290x76.png" frameborder="0"></iframe>
+                <!-- <a href="#" class="adblock__link">
+                  <img src="" width="290" height="76" alt="">
+                </a> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-block">
+      <div class="container">
+
+        <div class="main-content team">
+          <div class="team__description">
+            <h2>О команде</h2>
+            <p>За&nbsp;время своего существования Клуб пережил много преобразований от&nbsp;закрытого независимого
+              сообщества до&nbsp;управляемого публичного медиа проекта. Новый CPA.Club сильно отличается
+              от&nbsp;приватного элитарного форума, который поддерживали Евгений KaumOff, Ярослав D0ZZeR и&nbsp;все
+              резиденты на&nbsp;протяжении долгих лет. Сегодня Клуб&nbsp;&mdash; это мультиформатная медиаплатформа
+              с&nbsp;разными уровнями доступа и&nbsp;участниками разного уровня доходов и&nbsp;экспертизы. Помимо
+              небольшого сообщества лидеров рынка, CPA.Club претендует быть международной площадкой для всех
+              профессионалов по&nbsp;CPA-маркетингу.</p>
+            <p>Обслуживание таких амбиций невозможно без&nbsp;компетентной команды. Поддержка всех медиа-направлений,
+              регулярная подготовка контента и&nbsp;его размещение, работа с&nbsp;инфлюенсерами, организация
+              и&nbsp;запуск тематических мероприятий&nbsp;&mdash; вот над чем мы&nbsp;неустанно работаем, чтобы вернуть
+              Клубу былой авторитет и&nbsp;поддерживать его.</p>
+            <i>Мы&nbsp;считаем, что публичная компания не&nbsp;должна скрывать лица. Нам нечего скрывать,
+              и&nbsp;мы&nbsp;гордимся тем, что делаем. О&nbsp;миссии и&nbsp;целях компании вы&nbsp;можете узнать
+              на&nbsp;соответствующей странице, а&nbsp;ниже позвольте представить мемберов команды, которые поддерживают
+              работу Клуба каждый день.</i>
+          </div>
+          <div class="team__cards">
+            <ul class="team__list list-reset">
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-dubovoy.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Михаил Дубовой</h3>
+                  <p>Business Owner and Project Evangelist</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-1">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:m.dubovoy@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg></a>
+                      <a href="https://t.me/mixxxail111" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-tg"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-divnic.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Alena Divnič</h3>
+                  <p>Head of PR</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-2">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:m.a.divnich@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg></a>
+                      <a href="https://t.me/adora_shandy" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-tg"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-belyaeva.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Катерина Беляева</h3>
+                  <p>Content Lead and Author of materials</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-3">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:e.beliaeva@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg></a>
+                      <a href="https://t.me/katerinabeli" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-tg"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-kurdyukova.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Мария Курдюкова</h3>
+                  <p>SMM and Content Manager</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-4">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:m.kurdiukova@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg></a>
+                      <a href="https://t.me/masharyba" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-tg"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-kolomiichenko.png);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Андрей Коломийченко</h3>
+                  <p>Head of Dev</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-5">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:a.kolomiichenko@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-sargsyan.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Гурген Саргсян</h3>
+                  <p>Head of Sales</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-6">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:g.sargsyan@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg>
+                      </a>
+                      <a href="https://t.me/GurgenSar" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-tg"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-borisov.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Роман Борисов</h3>
+                  <p>UA Manager and Media buyer</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-7">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:r.borisov@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-minaichev.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Влад Минайчев</h3>
+                  <p>Head of Design</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-8">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:v.minaichev@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg>
+                      </a>
+                      <a href="https://t.me/minai4ev" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-tg"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-krylova.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Кира Крылова</h3>
+                  <p>HR Business Partner</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-9">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:k.krylova@pin-up.business" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image">
+                  <div class="cover" style="background-image: url(./img/team-makarenko.jpg);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Дарина Макаренко</h3>
+                  <p>Head of Event</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-10">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="mailto:d.makarenko@origincreatives.com" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-email"></use>
+                        </svg>
+                      </a>
+                      <a href="https://t.me/darcymak" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-tg"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team__item">
+                <div class="team__image team__image--kesha">
+                  <!-- <img src="./img/team-kesha.png" alt="Робот Кеша"> -->
+                  <div class="cover" style="background-image: url(./img/team-kesha.png);"></div>
+                  <div class="team__logo-icon">
+                    <svg width="39" height="23" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="team__info">
+                  <h3>Робот Кеша</h3>
+                  <p>&nbsp;</p>
+                  <div class="team__btns">
+                    <button type="button" class="team__btn" data-open-popup data-value="#team-11">Подробнее</button>
+                    <div class="team__contacts">
+                      <a href="https://t.me/clubgate" target="_blank">
+                        <svg width="26" height="26" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#team-tg"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <div class="accordion">
+              <button class="accordion__button">Форум</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item">
+                  <h3>
+                    <a class="accordion__item" href="index.html">Форум</a>
+                  </h3>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="vipblock.html">VIP Раздел</a>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="block.html">Раздел 1</a>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="#">Раздел 2</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Блог</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="blog.html">Блог</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Обзоры</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Кейсы</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Новости</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Тенденции</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Компании</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="catalog.html">Компании</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Дейтинг</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Адалт</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Нутра</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Гемблинг</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Курсы</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="courses.html">Курсы</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="courses-cards.html">Программирование</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Аффилейт</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Дизайн</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Маркетинг</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Мероприятия</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="events.html">Мероприятия</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Конференции</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Митапы</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Афтерпати</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__socials">
+              <h3>Соцсети</h3>
+              <ul class="footer__socials-list list-reset">
+                <li class="footer__socials-item">
+                  <a href="https://t.me/cpaclubmain" target="_blank">
+                    <svg class="footer__socials-icon" width="15" height="15" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://www.instagram.com/cpa_club/" target="_blank">
+                    <svg class="footer__socials-icon" width="16" height="16" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://facebook.com/cpaclub1" target="_blank">
+                    <svg class="footer__socials-icon" width="15" height="20" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://linkedin.com/company/cpa-club" target="_blank">
+                    <svg class="footer__socials-icon" width="13" height="13" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://www.youtube.com/channel/UCJlWqpH8laA0LPdUWpe8gMw" target="_blank">
+                    <svg class="footer__socials-icon" width="13" height="13" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <nav class="footer__nav-bottom">
+            <div class="footer__copyright">
+              <span>© CPA.CLUB 2013-2023</span>
+            </div>
+            <div class="footer__menu">
+              <a href="#">Контакты администрации</a>
+              <a href="#">Архив</a>
+              <a href="#">Конфиденциальность</a>
+              <a class="footer__up-btn" href="#">
+                <svg class="footer__up-btn-icon" width="10" height="10" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#up-btn"></use>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modals -->
+
+  <!-- MAIN POPUP -->
+
+  <div class="popup-overlay">
+    <div class="popup">
+      <div class="popup__content">
+        <button type="button" class="popup__close-btn" aria-label="Закрыть окно."></button>
+        <ul class="popup__content-list list-reset">
+          <li class="popup__content-item popup__content-item--signup" id="signup">
+            <div class="popup__content-inner">
+              <span class="popup__subtitle-mob">Есть аккаунт? Нажмите для </span>
+              <h3>Регистрация</h3>
+              <p>Добро пожаловать! Введите данные для регистрации</p>
+              <ul class="popup__reg-btn-list list-reset">
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--google">
+                    <svg class="popup__reg-btn-icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-google"></use>
+                    </svg>
+                    <span>Регистрация с Google</span>
+                  </a>
+                </li>
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--apple">
+                    <svg class="popup__reg-btn-icon" width="15" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-apple"></use>
+                    </svg>
+                    <span>Регистрация с Apple</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="popup__divider">
+                <p>или</p>
+              </div>
+              <form action="" method="post" id="login-form">
+                <label for="login-userlogin">
+                  <input type="text" name="login-userlogin" id="login-userlogin" placeholder="Логин" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="login-email">
+                  <input type="email" name="login-email" id="login-email" placeholder="Email" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="login-password">
+                  <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <button type="submit" class="popup__submit-btn">Создать аккаунт</button>
+              </form>
+              <button type="button" class="popup__login-btn open-popup login-btn" data-value="#login">
+                <span class="popup__login-btn-desk">Вход</span>
+                <span class="popup__login-btn-mob">Входa</span>
+              </button>
+            </div>
+            <div class="popup__image">
+              <img src="./img/popup-bg.png" srcset="./img/popup-bg@2x.png 2x" width="455" height="635" loading="lazy"
+                alt="">
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--login" id="login">
+            <div class="popup__content-inner">
+              <h3>Вход</h3>
+              <p>Добро пожаловать! Введите данные для входа</p>
+              <ul class="popup__reg-btn-list list-reset">
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--google">
+                    <svg class="popup__reg-btn-icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-google"></use>
+                    </svg>
+                    <span>Вход с Google</span>
+                  </a>
+                </li>
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--apple">
+                    <svg class="popup__reg-btn-icon" width="15" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-apple"></use>
+                    </svg>
+                    <span>Вход с Apple</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="popup__divider">
+                <p>или</p>
+              </div>
+              <form action="" method="post" id="signup-form">
+                <label for="signup-userlogin">
+                  <input type="text" name="signup-userlogin" id="signup-userlogin" placeholder="Логин" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="signup-password">
+                  <input type="password" name="signup-password" id="signup-password" placeholder="Пароль" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <div class="popup__checkbox-wrapper">
+                  <input class="visually-hidden" type="checkbox" name="remember" id="remember" checked>
+                  <label for="remember">Запомнить меня</label>
+                  <button type="button" class="popup__forgot-password-link open-popup pass-restore-btn"
+                    data-value="#pass-restore">Забыли
+                    пароль?</button>
+                </div>
+                <button type="submit" class="popup__submit-btn">Вход</button>
+                <div class="popup__signup-wrapper">
+                  <span>Нет аккаунта?</span>
+                  <button type="button" class="popup__signup-btn open-popup signup-btn"
+                    data-value="#signup">Регистрация</button>
+                </div>
+              </form>
+            </div>
+            <div class="popup__image">
+              <img src="./img/popup-bg.png" srcset="./img/popup-bg@2x.png 2x" width="455" height="635" loading="lazy"
+                alt="">
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--pass-restore" id="pass-restore">
+            <div class="popup__content-inner popup__content-inner--pass-restore pass-restore">
+              <div class="pass-restore__content">
+                <ul class="pass-restore__slides-list list-reset">
+                  <li class="pass-restore__slides-item active" id="reset-slide_1">
+                    <h3>Забыли пароль?</h3>
+                    <p>Не переживайте. Введите почту и мы отправим инструкции</p>
+                    <form id="pass-restore-email-form" action="" method="post">
+                      <label for="pass-restore-email">
+                        <input type="email" name="pass-restore-email" id="pass-restore-email" placeholder="Ваш E-mail"
+                          required>
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--email"
+                        data-value="#reset-slide_2" data-dot="#pag_2">
+                        <span>Сбросить пароль</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <button type="button"
+                      class="pass-restore__login-btn pass-restore__login-btn--exit open-popup login-btn"
+                      data-value="#login">←
+                      Назад</button>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_2">
+                    <h3>Сброс пароля</h3>
+                    <p>Отправили вам код на <span class="pass-restore__email">mail@mail.ru</span></p>
+                    <form id="pass-restore-code-form" action="" method="post">
+                      <div class="pass-restore__inputs pin">
+                        <input type="number" name="pass-restore-code_1" id="pass-restore-code_1" value="" autofocus>
+                        <input type="number" name="pass-restore-code_2" id="pass-restore-code_2" value="">
+                        <input type="number" name="pass-restore-code_3" id="pass-restore-code_3" value="">
+                        <input type="number" name="pass-restore-code_4" id="pass-restore-code_4" value="">
+                        <input type="number" name="pass-restore-code_5" id="pass-restore-code_5" value="">
+                        <input type="number" name="pass-restore-code_6" id="pass-restore-code_6" value="">
+                        <input type="hidden" name="pincode-result">
+                        <span class="error-message">Не подходит :( Попробуйте снова</span>
+                      </div>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--code"
+                        data-value="#reset-slide_3" data-dot="#pag_3">
+                        <span>Далее</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <div class="pass-restore__btn-wrapper">
+                      <span>Не пришел код?</span>
+                      <button type="button" class="pass-restore__btn pass-restore__btn--resend"
+                        data-value="#reset-slide_1" data-dot="#pag_1">Отправить еще раз</button>
+                    </div>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_3">
+                    <h3>Введите новый пароль</h3>
+                    <p>Не менее 8 знаков</p>
+                    <form id="pass-restore-pass-form" action="" method="post">
+                      <input type="text" name="pass-restore-pass" id="pass-restore-pass_1" placeholder="Введите пароль"
+                        pattern="[0-9a-zA-Z!@#$%^&*]{8,}" title="Не менее 8 знаков" required>
+                      <label for="pass-restore-pass_1">Ваш пароль
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <input type="text" name="pass-restore-pass" id="pass-restore-pass_2" placeholder="Подтверждение"
+                        pattern="[0-9a-zA-Z!@#$%^&*]{8,}" title="Не менее 8 знаков" required>
+                      <label for="pass-restore-pass_2">Подтвердите пароль
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--pass"
+                        data-value="#reset-slide_4" data-dot="#pag_4">
+                        <span>Сбросить пароль</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <button type="button" class="pass-restore__btn pass-restore__btn--return"
+                      data-value="#reset-slide_2" data-dot="#pag_2">←
+                      Назад</button>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_4">
+                    <h3>Готово!</h3>
+                    <p>Пароль сброшен</p>
+                    <button type="button"
+                      class="pass-restore__login-btn pass-restore__login-btn--completed open-popup login-btn"
+                      data-value="#login">Войти</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="pass-restore__pagination">
+                <ul class="pass-restore__pagination-list list-reset">
+                  <li class="pass-restore__pagination-item active" id="pag_1">
+                    <p>1</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_2">
+                    <p>2</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_3">
+                    <p>3</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_4">
+                    <p>4</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--admin" id="admin">
+            <div class="popup__content-inner popup__content-inner--admin admin-popup">
+              <h3>Закрытый контент</h3>
+              <p>Войдите или
+                <button type="button" class="admin-popup__signup-btn open-popup signup-btn" data-value="#signup">
+                  <span>зарегистрируйтесь</span>
+                </button>
+              </p>
+              <form action="" method="post" id="admin-login-form">
+                <label for="admin-userlogin">
+                  <input type="text" name="admin-userlogin" id="admin-userlogin" placeholder="Login" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="admin-password">
+                  <input type="password" name="admin-password" id="admin-password" placeholder="Password" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <button type="button" class="admin-popup__password-toggle-btn">Показать</button>
+                <button type="submit" form="admin-login-form" class="admin-popup__submit-btn">Войти</button>
+              </form>
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--edit" id="edit">
+            <div class="popup__content-inner popup__content-inner--edit custom-edit-popup">
+              <h3>Редактирование</h3>
+              <form action="" method="post" id="custom-edit-form">
+                <label for="input_1">
+                  <input type="text" name="input_1" id="input_1" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_2">
+                  <input type="text" name="input_1" id="input_2" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_3">
+                  <input type="text" name="input_1" id="input_3" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_4">
+                  <input class="invalid" type="text" name="input_1" id="input_4" placeholder="Input label text">
+                  <span class="error-message active">Заполните это поле</span>
+                </label>
+                <button type="submit" form="admin-login-form" class="custom-edit-popup__submit-btn">Сохранить</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- END MAIN POPUP -->
+
+  <!-- TEAM POPUP -->
+
+  <div class="team-popup-overlay">
+    <div class="team-popup">
+      <div class="team-popup__content">
+        <button type="button" class="team-popup__close-btn" data-close-popup aria-label="Закрыть окно.">
+          <svg width="44" height="44" fill="currentColor">
+            <use xlink:href="./img/sprite.svg#team-close"></use>
+          </svg>
+        </button>
+        <ul class="team-popup__content-list list-reset">
+          <li class="team-popup__content-item" id="team-1">
+            <div class="team-popup__image">
+              <img src=" ./img/team-dubovoy.jpg" alt="Михаил Дубовой">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Михаил Дубовой</h3>
+                  <p>Business Owner and Project Evangelist</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:m.dubovoy@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/mixxxail111" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Миша&nbsp;&mdash; душа и&nbsp;гордость нашей команды. Мы&nbsp;считаем, что он&nbsp;сможет привести
+                  клуб
+                  к&nbsp;новым вершинам. Под его руководством разработано новое видение современного клуба. Богатый
+                  профессиональный и&nbsp;житейский опыт помогут поддерживать атмосферу взаимопомощи
+                  и&nbsp;взаимоуважения. Михаил работает в&nbsp;сфере онлайн-манимейкинга с&nbsp;2010&nbsp;года,
+                  с&nbsp;2011 посещает ивенты по&nbsp;интернет-маркетингу. Имеет сильную экспертизу в&nbsp;SEO
+                  и&nbsp;мобильном медиабаинге.
+                  Монетизирует собственные вебсайты и&nbsp;приложения, также практикует рекламный арбитраж. Побеждал
+                  в&nbsp;крупных конкурсах партнёрских сетей. Основные вертикали: мобильные игры, мобильные подписки
+                  и&nbsp;iGaming. Резидент клуба с&nbsp;2017&nbsp;года. Обожает рыбалку, активный отдых и&nbsp;занятия
+                  спортом.</p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-2">
+            <div class="team-popup__image">
+              <img src=" ./img/team-divnic.jpg" alt="Alena Divnič">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Alena Divnič</h3>
+                  <p>Head of PR</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:a.divnich@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/adora_shandy" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/divnichalena/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Более 5&nbsp;лет Алена занимается маркетингом и&nbsp;пиаром проектов по&nbsp;партнёрскому
+                  и&nbsp;CPA-маркетингу. Знает &laquo;всю кухню&raquo; пиара в&nbsp;нашей индустрии как со&nbsp;стороны
+                  партнёрских сетей, так и&nbsp;со&nbsp;стороны сервисов и&nbsp;медиа. Может буквально пропушить
+                  на&nbsp;нашем рынке что угодно... кроме себя собой. Алена обожает&nbsp;F1, лично посещает Гран При
+                  гонки во&nbsp;время сезона, любит кулинарию и&nbsp;странноватые приколы. Однажды на&nbsp;спор набила
+                  татуировку в&nbsp;виде логотипа одной из&nbsp;ПП. У&nbsp;Алены есть уникальное видение продвижения
+                  нового Клуба, и&nbsp;она намерена воплотить все свои амбициозные проекты, чтобы вернуть
+                  и&nbsp;закрепить авторитет CPA.Club.</p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-3">
+            <div class="team-popup__image">
+              <img src=" ./img/team-belyaeva.jpg" alt="Катерина Беляева">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Катерина Беляева</h3>
+                  <p>Content Lead and Author of materials</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:e.beliaeva@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/katerinabeli" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/katerina-beliaeva/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Вот уже 3&nbsp;года Катерина занимается всевозможным контент-мейкингом для проектов
+                  в&nbsp;CPA-индустрии. Она сотрудничала, как автор, редактор и&nbsp;копирайтер со&nbsp;многими
+                  проектами в&nbsp;нише, успела поработать контент-лидом в&nbsp;партнёрской сети LeadRock,
+                  а&nbsp;сегодня возглавляет контентное направление в&nbsp;новом CPA.Club. Каждая статья, заметка
+                  и&nbsp;сценарий появляются в&nbsp;Клубе при её&nbsp;участии и&nbsp;с&nbsp;её&nbsp;одобрения. Именно
+                  она помогает превращать все тексты на&nbsp;нашем ресурсе в&nbsp;публицистические шедевры. Кроме того,
+                  Катерина самостоятельно ведёт несколько рубрик, участвует в&nbsp;модерировании форума и&nbsp;бдит
+                  за&nbsp;тем, чтобы общение в&nbsp;Клубе оставалось профессиональным. Катерина любит читать,
+                  фотографировать, гулять по&nbsp;неизвестным местам городов и&nbsp;раскрашивать картины
+                  по&nbsp;номерам. Чтобы новый CPA.Club стал достойным проектом, на&nbsp;который ориентируется вся
+                  индустрия, Катерина вместе с&nbsp;командой приложат максимум усилий в&nbsp;работе с&nbsp;контентом.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-4">
+            <div class="team-popup__image">
+              <img src=" ./img/team-kurdyukova.jpg" alt="Мария Курдюкова">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Мария Курдюкова</h3>
+                  <p>SMM and Content Manager</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:m.kurdiukova@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/masharyba" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/мария-курдюкова-290805249/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Мария&nbsp;&mdash; главный рупор CPA.Club по&nbsp;всем медиа направлениям. С&nbsp;многолетним опытом
+                  в&nbsp;контентном маркетинге для CPA-проектов, Маша, наш ведущий Social Media специалист, ведёт все
+                  соцсети Клуба, размещает анонсы, тизеры, объявления, отзывы, комментарии и&nbsp;ремарки CPA.Club.
+                  Кроме того, сама ведёт несколько контентных рубрик и&nbsp;проверяет все материалы, которые размещаются
+                  в&nbsp;публичном блоге. Мария любит онлайн-игры, интересуется геймдевом и&nbsp;индустрией игр, обожает
+                  стримы и&nbsp;активно играет сама. Иногда работает стилистом-визажистом на&nbsp;видеосъемках. CPA.Club
+                  для Маши&nbsp;&mdash; проект
+                  с&nbsp;богатой и&nbsp;насыщенной историей, собственной культурой и&nbsp;ценностями. Чтобы Клуб заиграл
+                  новыми красками, контент-команда приложит максимум усилий и&nbsp;возродит авторитет CPA.Club.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-5">
+            <div class="team-popup__image">
+              <img src=" ./img/team-kolomiichenko.png" alt="Андрей Коломийченко">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Андрей Коломийченко</h3>
+                  <p>Head of Dev</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:a.kolomiichenko@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/andrii-pro/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Разработкой платформы и&nbsp;интеграцией медиа площадок CPA.Club занимается Андрей.
+                  Он&nbsp;не&nbsp;понаслышке знаком с&nbsp;партнёрскими программами: вот уже 12+&nbsp;лет Андрей
+                  профессионально занимается разработкой сервисов партнёрских сетей, агрегаторов трафика
+                  и&nbsp;высоконагруженных систем таргетинга и&nbsp;CRM-систем для рекламодателей. Также имеет
+                  внушительный опыт в&nbsp;создании скриптов клоакинга, автозалива и&nbsp;генераторов креативов. Андрей
+                  умеет, пожалуй, всё, что технари придумали в&nbsp;рекламном арбитраже за&nbsp;всё время его
+                  существования. Понимая все технические потребности CPA-платформ, наш Head of&nbsp;Dev как&nbsp;никто
+                  знает,
+                  что именно нужно для развития нового Клуба. Андрей увлекается решением нестандартных IT-задач,
+                  участвует во&nbsp;всевозможных хакатонах для IT-проектов и&nbsp;занимается мотоджимханой
+                  (экстремальный мотоспорт с&nbsp;препятствиями).
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-6">
+            <div class="team-popup__image">
+              <img src=" ./img/team-sargsyan.jpg" alt="Гурген Саргсян">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Гурген Саргсян</h3>
+                  <p>Head of Sales</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:g.sargsyan@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/GurgenSar" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gurgen-sargsyan-expert/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Деловая деятельность CPA.Club невозможна без монетизации и&nbsp;подключения к&nbsp;платформе сервисов
+                  и&nbsp;компаний. Интеграцией CPA-бизнесов со&nbsp;всего мира занимается Гурген&nbsp;&mdash;
+                  он&nbsp;наш главный продажник и&nbsp;первая точка входа в&nbsp;Клуб для коммерческих размещений.
+                  В&nbsp;сфере B2B продаж уже более 15&nbsp;лет. Гурген курирует раздел каталога и&nbsp;отзывов,
+                  заведует всей рекламой на&nbsp;проекте и&nbsp;подключает новых партнёров к&nbsp;Клубу. Исключительно
+                  общителен и&nbsp;любознателен: обожает заводить друзей, осваивать профессии, прокачивать скиллы
+                  и&nbsp;вообще всё новое. Поддержание престижного статуса CPA.Club&nbsp;&mdash; важная задача для
+                  Гургена, он&nbsp;приложит все силы, чтобы Клуб был самым честным сообществом на&nbsp;нашем рынке.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-7">
+            <div class="team-popup__image">
+              <img src=" ./img/team-borisov.jpg" alt="Роман Борисов">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Роман Борисов</h3>
+                  <p>UA Manager and Media buyer</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:r.borisov@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/roman-borisov-goat/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Контент Клуба создаёт его репутацию, а&nbsp;репутация Клуба говорит сама за&nbsp;себя. Тем
+                  не&nbsp;менее, амбиции CPA.Club едва&nbsp;ли возможно реализовать без рекламы. Всей платной рекламой
+                  проекта, баннерами, объявлениями, контекстом и&nbsp;ретаргетингом занимается Роман. Когда
+                  вы&nbsp;видите нашу рекламу из&nbsp;каждого чайника&nbsp;&mdash; вы&nbsp;так или иначе сталкиваетесь
+                  с&nbsp;его работой. Рома занимается рекламным арбитражем с&nbsp;2016&nbsp;года, а&nbsp;непосредственно
+                  медиабаингом для IT-брендов уже почти 6&nbsp;лет. Работал с&nbsp;такими тяжеловесными вертикалями как
+                  недвижимость, банковская сфера, VR/AR продукты. В&nbsp;общей сложности делал медиабаинг для
+                  110+&nbsp;брендов. Роман любит футбол и&nbsp;баскетбол: не&nbsp;просто болеет, но&nbsp;сам играет всю
+                  жизнь. Роман ответственно разделяет ценности клуба и&nbsp;старается сделать так, чтобы аффилиаты
+                  со&nbsp;всего мира получили возможность приобщиться к&nbsp;нашему опыту и&nbsp;накопленным знаниям.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-8">
+            <div class="team-popup__image">
+              <img src=" ./img/team-minaichev.jpg" alt="Владислав Минайчев">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Владислав Минайчев</h3>
+                  <p>Head of Design</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:v.minaichev@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/minai4ev" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Главная ценность клуба&nbsp;&mdash; его сообщество, а&nbsp;главное оружие&nbsp;&mdash; контент
+                  и&nbsp;накопленные знания.
+                  Но&nbsp;даже лучший контент не&nbsp;всегда найдёт читателя без яркой упаковки. Оформлением
+                  и&nbsp;дизайном всех продуктов CPA.Club занимается Владислав. Лендинги, интерфейсы, презентации,
+                  кнопки, обложки и&nbsp;баннеры&nbsp;&mdash; всё это делает Влад, как штатный мультидисциплинарный
+                  дизайнер проекта. Влад фанат культуры стрит-арта, любит поездки на&nbsp;велосипеде. Клуб для
+                  Влада&nbsp;&mdash; проект, где можно создавать безудержно много промо материалов. Он&nbsp;рад, что
+                  CPA.Club не&nbsp;даёт заскучать и&nbsp;всегда подкидывает новые интересные задания.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-9">
+            <div class="team-popup__image">
+              <img src=" ./img/team-krylova.jpg" alt="Кира Крылова">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Кира Крылова</h3>
+                  <p>HR Business Partner</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:k.krylova@pin-up.business" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/kira-krylova/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Оплот нашей безопасности, комфорта и&nbsp;ментального здоровья&nbsp;&mdash; это Кира.
+                  Не&nbsp;занимается напрямую организацией работы Клуба, но&nbsp;занимается теми, кто занимается
+                  Клубом:) У&nbsp;Киры 10&nbsp;лет опыта по&nbsp;HR в&nbsp;IT-бизнесах всех мастей и&nbsp;размеров.
+                  Перепробовав все существующие направления: от&nbsp;кадровика до&nbsp;HR&nbsp;Lead&rsquo;а, Кира точно
+                  знает, что нужно команде для поддержания эффективности, защиты от&nbsp;выгорания и&nbsp;эмоциональной
+                  стабильности. Пока мы&nbsp;заботимся о&nbsp;CPA.Club, Кира заботится о&nbsp;нас. Если хотите попасть
+                  в&nbsp;команду Клуба и&nbsp;помочь нам сделать партнёрский маркетинг лучше&nbsp;&mdash; смело пишите
+                  по&nbsp;контактам Киры.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-10">
+            <div class="team-popup__image">
+              <img src=" ./img/team-makarenko.jpg" alt="Дарина Макаренко">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Дарина Макаренко</h3>
+                  <p>Head of Event</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:d.makarenko@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/darcymak" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>У&nbsp;многих ветеранов рынка, CPA.Club крепко ассоциируется с&nbsp;тёплыми ламповыми встречами.
+                  Митапы Клуба чуть&nbsp;ли не&nbsp;с&nbsp;самого его основания были важной его частью: собирали
+                  участников вместе, объединяли&nbsp;их, и&nbsp;укрепляли партнёрские связи между ТОПами рынка.
+                  Мы&nbsp;очень хотим поддерживать эту культуру. Все ивенты в&nbsp;рамках Клуба курирует Дарина. Имея
+                  за&nbsp;плечами 10&nbsp;лет опыта организации всевозможных коммерческих и&nbsp;корпоративных
+                  мероприятий, Дарина точно знает, какими должны быть митапы авторитетного Клуба CPA-предпринимателей.
+                  Митапы, церемонии награждения, приватные препати перед нишевыми конференциями, совместный отдых
+                  резидентов Клуба&nbsp;&mdash; всё это делает ивент-команда под чутким руководством Дарины. Она
+                  поддерживает и&nbsp;разделяет идеологию и&nbsp;философию проекта: объединить профессионалов
+                  со&nbsp;всего мира и&nbsp;дать им&nbsp;возможность устанавливать эффективные партнёрские связи.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-11">
+            <div class="team-popup__image team-popup__image--kesha">
+              <img src=" ./img/team-kesha.png" alt="Робот Кеша">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Робот Кеша</h3>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="https://t.me/clubgate" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Нет такого участника &laquo;старого&raquo; Клуба, который не&nbsp;знал&nbsp;бы Кешу
+                  и&nbsp;не&nbsp;испытывал к&nbsp;нему особого отношения. Кеша неотделим от&nbsp;CPA.Club, как&nbsp;бы
+                  многие не&nbsp;хотели отключить этого зловредного бота. Долгие годы робот следил за&nbsp;дисциплиной
+                  и&nbsp;активностью пользователей, исправно напоминая резидентам, что неучастие и&nbsp;безразличие
+                  не&nbsp;идут на&nbsp;пользу закрытому сообществу. Кеша и&nbsp;впредь продолжит наблюдать
+                  за&nbsp;комьюнити. Нет, он&nbsp;больше не&nbsp;угрожает заморозкой аккаунта за&nbsp;неактивность,
+                  но&nbsp;выдаёт статусы и&nbsp;достижения, начисляет репутацию и&nbsp;проверяет голосования
+                  на&nbsp;накрутки, а&nbsp;нарушителям объявляет санкции в&nbsp;виде мьютов и&nbsp;ограничений.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button type="button" class="team-popup__close-btn-mob" data-close-popup>Закрыть</button>
+  </div>
+
+  <!-- END TEAM POPUP -->
+
+  <!-- COOKIES POPUP -->
+
+  <div class="cookies-popup custom-popup" id="cookies-popup"> <!--add class "active" to show the popup-->
+    <div class="cookies-popup__content">
+      <h3>Уведомление</h3>
+      <p>Этот сайт использует файлы cookies
+        и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения
+        работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически
+        соглашаетесь с использованием данных технологий.</p>
+      <button type="button" class="cookies-popup__submit-btn" data-close-btn>Принять</button>
+    </div>
+  </div>
+
+  <!-- END COOKIES POPUP -->
+
+  <!-- ADVERTISE POPUP -->
+
+  <div class="advert-popup custom-popup" id="advert-popup"> <!--add class "active" to show the popup-->
+    <button type="button" class="advert-popup__close-btn" data-close-btn aria-label="Закрыть"></button>
+    <div class="advert-popup__content">
+      <div class="advert-popup__image">
+        <img src="./img/advert-image.png" srcset="./img/advert-image@2x.png 2x" width="314" height="145" loading="lazy"
+          alt="">
+      </div>
+      <div class="advert-popup__info">
+        <p>Рекламное сообщение. Две строки. До 50 символов</p>
+        <a href="#" class="advert-popup__link">Перейти</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- END ADVERTISE POPUP -->
+
+  <!-- ALERT POPUP -->
+
+  <div class="alert-popup custom-popup" id="alert-popup"> <!--add class "active" to show the popup-->
+    <button type="button" class="alert-popup__close-btn" data-close-btn></button>
+    <div class="alert-popup__content alert-popup__content--error">
+      <p>Wrong password!</p>
+    </div>
+    <!-- <div class="alert-popup__content alert-popup__content--success">
+      <p>Success!</p>
+    </div> -->
+  </div>
+
+  <!-- END ALERT POPUP -->
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

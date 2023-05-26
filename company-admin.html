@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CPA Club Forum">
+  <title>CPA Club Connect</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- BRANDING -->
+
+  <a href="https://cpa.club/" id="branding-container" class="branding"></a>
+
+  <!-- END BRANDING -->
+
+  <div class="wrapper">
+    <div id="top-container"></div>
+    <div id="branding-container-top" class="branding"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo-wrapper">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="./img/cpa-logo.png" srcset="./img/cpa-logo@2x.png 2x" width="190" height="29"
+                alt="CPA Club logo.">
+            </a>
+          </div>
+          <span>×</span>
+          <div class="header__partner-logo">
+            <a href="#">
+              <img src="./img/partner-logo.png" srcset="./img/partner-logo@2x.png 2x" width="90" height="25"
+                alt="CPA Club logo.">
+            </a>
+          </div>
+        </div>
+
+        <div class="header__search search">
+          <form action="" method="get" id="header-search-form">
+            <input name="search" placeholder="Поиск по форуму" type="search">
+            <button class="search__btn" type="submit">
+              <svg width="20" height="20" fill="currentColor">
+                <use xlink:href="./img/sprite.svg#search-btn"></use>
+              </svg>
+            </button>
+          </form>
+
+          <!-- add class 'active' to show the list below -->
+          <div class="search__results">
+            <ul class="search__results-list list-reset">
+              <li class="search__results-item">
+                <h3>Результаты поиска • <span class="search__results-count">3</span></h3>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="header__user-menu user-menu">
+          <div class="user-menu__lang-switcher">
+            <div class="user-menu__lang-switcher-wrapper">
+              <a class="user-menu__lang-link active" href="#">RU</a>
+              <a class="user-menu__lang-link" href="#">UA</a>
+              <a class="user-menu__lang-link" href="#">UK</a>
+            </div>
+          </div>
+          <div class="user-menu__unlogged">
+            <button type="button" class="user-menu__btn user-menu__btn--login open-popup login-btn"
+              data-value="#login">Вход</button>
+            <button type="button" class="user-menu__btn user-menu__btn--signup open-popup signup-btn"
+              data-value="#signup">Регистрация</button>
+          </div>
+          <div class="user-menu__logged active">
+            <div class="user-menu__alerts">
+              <button class="user-menu__alerts-btn" type="button">
+                <svg class="user-menu__alerts-btn-icon" width="16" height="20" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#bell"></use>
+                </svg>
+                <span class="user-menu__alerts-icon"></span>
+              </button>
+              <ul class="user-menu__alerts-list list-reset">
+                <li class="user-menu__alerts-item">
+                  <h3>Уведомления</h3>
+                </li>
+                <li class="user-menu__alerts-item active">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 1</a>
+                </li>
+                <li class="user-menu__alerts-item active">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 2</a>
+                </li>
+                <li class="user-menu__alerts-item">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 3</a>
+                </li>
+                <li class="user-menu__alerts-item">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 4</a>
+                </li>
+              </ul>
+            </div>
+            <div class="user-menu__user-block">
+              <div class="user-menu__avatar">
+                <a href="user-profile.html">
+                  <img src="./img/avatar.png" loading="lazy" width="30" height="30" alt="User avatar.">
+                </a>
+              </div>
+              <div class="user-menu__user-name">
+                <p>Владислав Минайчев</p>
+              </div>
+            </div>
+            <button class="user-menu__logout-btn logout-btn" type="button">
+              <svg width="24" height="24" fill="currentColor">
+                <use xlink:href="./img/sprite.svg#logout"></use>
+              </svg>
+              <span>Выход</span>
+            </button>
+          </div>
+          <button type="button" class="user-menu__nav-btn" aria-label="Открыть меню."></button>
+          <nav class="header__nav header-nav">
+            <div class="header-nav__content">
+              <ul class="header-nav__list list-reset">
+                <li class="header-nav__item header-nav__item--forum">
+                  <a class="header-nav__link" href="index.html">
+                    <h3>Форум</h3>
+                    <p>Классический форум для общения топов рынка</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--catalog">
+                  <a class="header-nav__link" href="catalog.html">
+                    <h3>Компании</h3>
+                    <p>Рейтинг компаний в отрасли</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--courses">
+                  <a class="header-nav__link" href="courses.html">
+                    <h3>Курсы</h3>
+                    <p>Обучающие материалы для будущих профессионалов IT</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--events">
+                  <a class="header-nav__link" href="events.html">
+                    <h3>Мероприятия</h3>
+                    <p>Информация о формате, программе, спикерах, шоу</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--blog">
+                  <a class="header-nav__link" href="blog.html">
+                    <h3>Блог</h3>
+                    <p>Последние новости, кейсы и тенденции</p>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="adblock adblock-220x320">
+                <iframe width="220" height="320" src="./img/banner-menu-295х430.png" frameborder="0"></iframe>
+                <!-- <a href="#" class="adblock__link">
+                    <img src="" width="220" height="320" alt="">
+                  </a> -->
+              </div>
+
+              <div class="adblock adblock-290x76">
+                <iframe width="290" height="76" src="./img/banner-290x76.png" frameborder="0"></iframe>
+                <!-- <a href="#" class="adblock__link">
+                  <img src="" width="290" height="76" alt="">
+                </a> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-block">
+      <div class="container">
+
+        <div class="adblock adblock-1240x110">
+          <iframe width="1240" height="110" src="./img/banner-1240x110.png" frameborder="0"></iframe>
+          <!-- <a href="#" class="adblock__link">
+            <img src="" width="1240" height="110" alt="">
+          </a> -->
+        </div>
+
+        <div class="adblock adblock-290x76">
+          <iframe width="290" height="76" src="./img/banner-290x76.png" frameborder="0"></iframe>
+          <!-- <a href="#" class="adblock__link">
+            <img src="" width="290" height="76" alt="">
+          </a> -->
+        </div>
+
+        <div class="main-content company-admin">
+
+          <!-- <form id="company-admin-form" action="" method="post" enctype="multipart/form-data"> -->
+            <form id="myForm" action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+
+            <div class="company-admin__name">
+              <h3>Название компании</h3>
+              <label for="company-name">
+                <input type="text" id="company-name" placeholder="Введите название">
+                <span class="error-message">Текст сообщения</span>
+              </label>
+            </div>
+
+            <div class="company-admin__file-upload upload">
+
+              <div class="upload__logo">
+                <h3>Загрузите логотип</h3>
+                <div class="upload__drop-zone">
+
+                  <!-- исходный контент -->
+                  <div class="upload__content visible">
+                    <p>Перетащите или кликните для загрузки</p>
+                    <input type="file" id="upload-logo" name="upload-logo" accept="image/*">
+                    <label for="upload-logo">
+                      <b class="button">Обзор</b>
+                    </label>
+                    <span>размер изображения не менee 400×400 px</span>
+                  </div>
+
+                  <!-- прелоадер -->
+                  <div class="upload__preloader">
+                    <div class="upload__preloader-content">
+                      <p class="upload__filename"></p>
+                    </div>
+                    <p><span class="upload__preloader-percentage"></span>%</p>
+                    <progress class="progress-bar" id="progress-bar" max=100 value=0></progress>
+                  </div>
+
+                  <!-- файл загружен -->
+                  <div class="upload__status">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M28 18C28 16.3431 29.3432 15 31 15C32.6568 15 34 16.3431 34 18C34 19.6569 32.6568 21 31 21C29.3432 21 28 19.6569 28 18Z"
+                        fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.5349 9.3171C20.8331 8.76962 27.1667 8.76962 33.4649 9.3171L36.4853 9.57966C39.3755 9.8309 41.7169 12.0302 42.1483 14.899C43.0555 20.9324 43.0555 27.0676 42.1483 33.101C41.7169 35.9698 39.3755 38.169 36.4853 38.4204L33.4649 38.6828C27.1667 39.2304 20.8331 39.2304 14.5349 38.6828L11.5145 38.4204C8.62434 38.169 6.283 35.9698 5.8516 33.101C4.94432 27.0676 4.94432 20.9324 5.8516 14.899C6.283 12.0302 8.62434 9.8309 11.5145 9.57966L14.5349 9.3171ZM33.2051 12.3058C27.0799 11.7734 20.9199 11.7734 14.7947 12.3058L11.7743 12.5684C10.2656 12.6995 9.04344 13.8476 8.81826 15.3451C8.30318 18.7703 8.0956 22.23 8.19548 25.683L15.9392 17.9393C16.2313 17.6472 16.631 17.4885 17.0439 17.5006C17.4569 17.5128 17.8465 17.6947 18.121 18.0035L25.4639 26.2642L30.5255 24.577C31.0917 24.3882 31.7157 24.553 32.1149 24.9966L39.1531 32.8168C39.1639 32.7634 39.1733 32.7094 39.1815 32.6548C40.0443 26.9172 40.0443 21.0828 39.1815 15.3451C38.9563 13.8476 37.7341 12.6995 36.2255 12.5684L33.2051 12.3058ZM37.2403 35.176L30.5421 27.7338L25.4743 29.423C24.9049 29.6128 24.2775 29.445 23.8787 28.9966L16.9356 21.1856L8.44828 29.673C8.54584 30.6692 8.66916 31.6634 8.81826 32.6548C9.04344 34.1524 10.2656 35.3004 11.7743 35.4316L14.7948 35.6942C20.9199 36.2266 27.0799 36.2266 33.2051 35.6942L36.2255 35.4316C36.5829 35.4006 36.9243 35.3124 37.2403 35.176Z"
+                        fill="white" />
+                    </svg>
+                    <p class="upload__filename"></p>
+                    <button type="button" class="upload__reset-btn"></button>
+                  </div>
+
+                  <!-- сообщение о неправильном формате/размере -->
+                  <span class="error-message"></span>
+                </div>
+
+              </div>
+
+              <div class="upload__cover">
+                <h3>Загрузите обложку</h3>
+                <div class="upload__drop-zone">
+
+                  <!-- исходный контент -->
+                  <div class="upload__content visible">
+                    <p>Перетащите или кликните для загрузки</p>
+                    <input type="file" id="upload-cover" name="upload-cover" accept="image/*">
+                    <label for="upload-cover">
+                      <b class="button">Обзор</b>
+                    </label>
+                    <span>размер изображения не менee 400×400 px</span>
+                  </div>
+
+                  <!-- прелоадер -->
+                  <div class="upload__preloader">
+                    <div class="upload__preloader-content">
+                      <p class="upload__filename"></p>
+                    </div>
+                    <p><span class="upload__preloader-percentage"></span>%</p>
+                    <progress class="progress-bar" id="progress-bar" max=100 value=0></progress>
+                  </div>
+
+                  <!-- файл загружен -->
+                  <div class="upload__status">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M28 18C28 16.3431 29.3432 15 31 15C32.6568 15 34 16.3431 34 18C34 19.6569 32.6568 21 31 21C29.3432 21 28 19.6569 28 18Z"
+                        fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.5349 9.3171C20.8331 8.76962 27.1667 8.76962 33.4649 9.3171L36.4853 9.57966C39.3755 9.8309 41.7169 12.0302 42.1483 14.899C43.0555 20.9324 43.0555 27.0676 42.1483 33.101C41.7169 35.9698 39.3755 38.169 36.4853 38.4204L33.4649 38.6828C27.1667 39.2304 20.8331 39.2304 14.5349 38.6828L11.5145 38.4204C8.62434 38.169 6.283 35.9698 5.8516 33.101C4.94432 27.0676 4.94432 20.9324 5.8516 14.899C6.283 12.0302 8.62434 9.8309 11.5145 9.57966L14.5349 9.3171ZM33.2051 12.3058C27.0799 11.7734 20.9199 11.7734 14.7947 12.3058L11.7743 12.5684C10.2656 12.6995 9.04344 13.8476 8.81826 15.3451C8.30318 18.7703 8.0956 22.23 8.19548 25.683L15.9392 17.9393C16.2313 17.6472 16.631 17.4885 17.0439 17.5006C17.4569 17.5128 17.8465 17.6947 18.121 18.0035L25.4639 26.2642L30.5255 24.577C31.0917 24.3882 31.7157 24.553 32.1149 24.9966L39.1531 32.8168C39.1639 32.7634 39.1733 32.7094 39.1815 32.6548C40.0443 26.9172 40.0443 21.0828 39.1815 15.3451C38.9563 13.8476 37.7341 12.6995 36.2255 12.5684L33.2051 12.3058ZM37.2403 35.176L30.5421 27.7338L25.4743 29.423C24.9049 29.6128 24.2775 29.445 23.8787 28.9966L16.9356 21.1856L8.44828 29.673C8.54584 30.6692 8.66916 31.6634 8.81826 32.6548C9.04344 34.1524 10.2656 35.3004 11.7743 35.4316L14.7948 35.6942C20.9199 36.2266 27.0799 36.2266 33.2051 35.6942L36.2255 35.4316C36.5829 35.4006 36.9243 35.3124 37.2403 35.176Z"
+                        fill="white" />
+                    </svg>
+                    <p class="upload__filename"></p>
+                    <button type="button" class="upload__reset-btn"></button>
+                  </div>
+
+                  <!-- сообщение о неправильном формате/размере -->
+                  <span class="error-message"></span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- <div class="company-admin__file-load">
+              <div class="company-admin__logo-load">
+                <h3>Загрузите логотип</h3>
+                <div class="company-admin__drop-zone" id="drop-zone">
+                  <p>Перетащите или кликните для загрузки</p>
+                  <input class="visually-hidden" type="file" id="logo-load" name="logo-load" accept=".jpg, .jpeg, .png">
+                  <label for="logo-load">Обзор</label>
+                  <span>размер изображения не менee 400×400 px</span>
+                </div>
+              </div>
+              <div class="company-admin__cover-load">
+                <h3>Загрузите обложку</h3>
+                <div class="company-admin__drop-zone" id="drop-zone-2">
+                  <p>Перетащите или кликните для загрузки</p>
+                  <input class="visually-hidden" type="file" id="cover-load" name="cover-load"
+                    accept=".jpg, .jpeg, .png">
+                  <label for="cover-load">Обзор</label>
+                  <span>размер изображения не менee 400×400 px</span>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="company-admin__edit-section">
+
+              <div class="company-admin__text">
+                <div id="editor"></div>
+                <div id="result-text" class="result-text"></div>
+              </div>
+
+              <div class="company-admin__links">
+                <div class="company-admin__links-block company-admin__links-block--first">
+                  <h3>Добавьте ссылки на соцсети</h3>
+                  <label class="company-admin__links-wrapper">
+                    <input type="url" name="link-fb" id="link-fb" placeholder="Facebook">
+                    <span class="error-message">Текст сообщения</span>
+                    <button class="company-admin__add-link" type="button" title="Добавить строку">+</button>
+                  </label>
+                  <label class="company-admin__links-wrapper">
+                    <input type="url" name="link-inst" id="link-inst" placeholder="Instagram">
+                    <span class="error-message">Текст сообщения</span>
+                    <button class="company-admin__add-link" type="button" title="Добавить строку">+</button>
+                  </label>
+                  <label class="company-admin__links-wrapper">
+                    <input type="url" name="link-tg" id="link-tg" placeholder="Telegram">
+                    <span class="error-message">Текст сообщения</span>
+                    <button class="company-admin__add-link" type="button" title="Добавить строку">+</button>
+                  </label>
+                  <label class="company-admin__links-wrapper">
+                    <input type="url" name="link-lnkdn" id="link-lnkdn" placeholder="Linkedin">
+                    <span class="error-message">Текст сообщения</span>
+                    <button class="company-admin__add-link" type="button" title="Добавить строку">+</button>
+                  </label>
+                  <label class="company-admin__links-wrapper">
+                    <input type="url" name="link-skype" id="link-skype" placeholder="Skype">
+                    <span class="error-message">Текст сообщения</span>
+                    <button class="company-admin__add-link" type="button" title="Добавить строку">+</button>
+                  </label>
+                  <label class="company-admin__links-wrapper">
+                    <input type="url" name="link-custom" id="link-custom" placeholder="link">
+                    <span class="error-message">Текст сообщения</span>
+                    <button class="company-admin__add-link" type="button" title="Добавить строку">+</button>
+                  </label>
+                </div>
+                <div class="company-admin__links-second-block">
+                  <h3>Ссылка для кнопки “Узнать подробнее”</h3>
+                  <label>
+                    <input type="url" name="link-https" id="link-https" placeholder="https://">
+                    <span class="error-message">Текст сообщения</span>
+                  </label>
+                </div>
+
+                <div class="company-admin__links-block company-admin__links-block--third">
+                  <h3>Добавьте контактное лицо</h3>
+                  <fieldset class="company-admin__links-wrapper">
+                    <button class="company-admin__add-link" type="button" title="Добавить еще одно котактное лицо">+</button>
+                    <label>
+                      <input type="text" name="contacts-name" id="contacts-name" placeholder="Name">
+                      <span class="error-message">Текст сообщения</span>
+                    </label>
+                    <label>
+                      <input type="text" name="position" id="position" placeholder="Position">
+                      <span class="error-message">Текст сообщения</span>
+                    </label>
+                    <label>
+                      <input type="email" name="contacts-email" id="contacts-email" placeholder="Email">
+                      <span class="error-message">Текст сообщения</span>
+                    </label>
+                    <label>
+                      <input type="url" name="contacts-tg" id="contacts-tg" placeholder="Telegram">
+                      <span class="error-message">Текст сообщения</span>
+                    </label>
+                    <label>
+                      <input type="url" name="contacts-skype" id="contacts-skype" placeholder="Skype">
+                      <span class="error-message">Текст сообщения</span>
+                    </label>
+                  </fieldset>
+                </div>
+
+                <div class="select-wrapper">
+                  <div class="select select-multiple">
+                    <fieldset>
+                      <label for="choices-multiple-remove-button">
+                        <span class="select__title">Выберите категории</span>
+                      </label>
+                      <select class="form-control choices-multiple-remove-button" name="choices-multiple-remove-button"
+                        id="choices-multiple-remove-button" multiple>
+                        <option value="Дейтинг">Дейтинг</option>
+                        <option value="Адалт">Адалт</option>
+                        <option value="Нутра">Нутра</option>
+                        <option value="Гемблинг">Гемблинг</option>
+                      </select>
+                      <div class="select-multiple__controls">
+                        <div class="select-multiple__hidden-items popover">
+                          <p>+<span class="popover__count"></span></p>
+                          <div class="popover__content" id="popover">
+                            <span class="popover__item"></span>
+                          </div>
+                        </div>
+                        <button class="select-multiple__reset-btn" type="reset"></button>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="select-wrapper">
+                  <div class="select select-multiple">
+                    <fieldset>
+                      <label for="choices-multiple-remove-button">
+                        <span class="select__title">Выберите тип выплаты</span>
+                      </label>
+                      <select class="form-control choices-multiple-remove-button" name="choices-multiple-remove-button-2"
+                        id="choices-multiple-remove-button-2" multiple>
+                        <option value="CPA">CPA</option>
+                        <option value="CPL">CPL</option>
+                        <option value="CPC">CPC</option>
+                      </select>
+                      <div class="select-multiple__controls">
+                        <div class="select-multiple__hidden-items popover">
+                          <p>+<span class="popover__count"></span></p>
+                          <div class="popover__content" id="popover">
+                            <span class="popover__item"></span>
+                          </div>
+                        </div>
+                        <button class="select-multiple__reset-btn" type="reset"></button>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="select-wrapper">
+                  <div class="select select-multiple">
+                    <fieldset>
+                      <label for="choices-multiple-remove-button">
+                        <span class="select__title">Выберите метод вывода</span>
+                      </label>
+                      <select class="form-control choices-multiple-remove-button" name="choices-multiple-remove-button-3"
+                        id="choices-multiple-remove-button-3" multiple>
+                        <option value="PayPal">PayPal</option>
+                        <option value="Wire">Wire</option>
+                        <option value="Western Union">Western Union</option>
+                      </select>
+                      <div class="select-multiple__controls">
+                        <div class="select-multiple__hidden-items popover">
+                          <p>+<span class="popover__count"></span></p>
+                          <div class="popover__content" id="popover">
+                            <span class="popover__item"></span>
+                          </div>
+                        </div>
+                        <button class="select-multiple__reset-btn" type="reset"></button>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <button class="company-admin__submit-btn" type="submit">Сохранить</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <div class="accordion">
+              <button class="accordion__button">Форум</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item">
+                  <h3>
+                    <a class="accordion__item" href="index.html">Форум</a>
+                  </h3>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="vipblock.html">VIP Раздел</a>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="block.html">Раздел 1</a>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="#">Раздел 2</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Блог</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="blog.html">Блог</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Обзоры</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Кейсы</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Новости</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Тенденции</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Компании</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="catalog.html">Компании</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Дейтинг</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Адалт</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Нутра</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Гемблинг</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Курсы</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="courses.html">Курсы</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="courses-cards.html">Программирование</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Аффилейт</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Дизайн</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Маркетинг</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Мероприятия</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="events.html">Мероприятия</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Конференции</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Митапы</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Афтерпати</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__socials">
+              <h3>Соцсети</h3>
+              <ul class="footer__socials-list list-reset">
+                <li class="footer__socials-item">
+                  <a href="https://t.me/cpaclubmain" target="_blank">
+                    <svg class="footer__socials-icon" width="15" height="15" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://www.instagram.com/cpa_club/" target="_blank">
+                    <svg class="footer__socials-icon" width="16" height="16" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://facebook.com/cpaclub1" target="_blank">
+                    <svg class="footer__socials-icon" width="15" height="20" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://linkedin.com/company/cpa-club" target="_blank">
+                    <svg class="footer__socials-icon" width="13" height="13" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://www.youtube.com/channel/UCJlWqpH8laA0LPdUWpe8gMw" target="_blank">
+                    <svg class="footer__socials-icon" width="13" height="13" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <nav class="footer__nav-bottom">
+            <div class="footer__copyright">
+              <span>© CPA.CLUB 2013-2023</span>
+            </div>
+            <div class="footer__menu">
+              <a href="#">Контакты администрации</a>
+              <a href="#">Архив</a>
+              <a href="#">Конфиденциальность</a>
+              <a class="footer__up-btn" href="#">
+                <svg class="footer__up-btn-icon" width="10" height="10" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#up-btn"></use>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+<!-- Modals -->
+
+  <!-- MAIN POPUP -->
+
+  <div class="popup-overlay">
+    <div class="popup">
+      <div class="popup__content">
+        <button type="button" class="popup__close-btn" aria-label="Закрыть окно."></button>
+        <ul class="popup__content-list list-reset">
+          <li class="popup__content-item popup__content-item--signup" id="signup">
+                        <div class="popup__content-inner">
+              <span class="popup__subtitle-mob">Есть аккаунт? Нажмите для </span>
+              <h2>Регистрация</h2>
+              <p>Добро пожаловать! Введите данные для регистрации</p>
+              <ul class="popup__reg-btn-list list-reset">
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--google">
+                    <svg class="popup__reg-btn-icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-google"></use>
+                    </svg>
+                    <span>Регистрация с Google</span>
+                  </a>
+                </li>
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--apple">
+                    <svg class="popup__reg-btn-icon" width="15" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-apple"></use>
+                    </svg>
+                    <span>Регистрация с Apple</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="popup__divider">
+                <p>или</p>
+              </div>
+              <form action="" method="post" id="login-form">
+                <label for="login-userlogin">
+                  <input type="text" name="login-userlogin" id="login-userlogin" placeholder="Логин" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="login-email">
+                  <input type="email" name="login-email" id="login-email" placeholder="Email" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="login-password">
+                  <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <button type="submit" class="popup__submit-btn">Создать аккаунт</button>
+              </form>
+              <button type="button" class="popup__login-btn open-popup login-btn" data-value="#login">
+                <span class="popup__login-btn-desk">Вход</span>
+                <span class="popup__login-btn-mob">Входa</span>
+              </button>
+            </div>
+            <div class="popup__image">
+              <img src="./img/popup-bg.png" srcset="./img/popup-bg@2x.png 2x" width="455" height="635" loading="lazy"
+                alt="">
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--login" id="login">
+            <div class="popup__content-inner">
+              <h2>Вход</h2>
+              <p>Добро пожаловать! Введите данные для входа</p>
+              <ul class="popup__reg-btn-list list-reset">
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--google">
+                    <svg class="popup__reg-btn-icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-google"></use>
+                    </svg>
+                    <span>Вход с Google</span>
+                  </a>
+                </li>
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--apple">
+                    <svg class="popup__reg-btn-icon" width="15" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-apple"></use>
+                    </svg>
+                    <span>Вход с Apple</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="popup__divider">
+                <p>или</p>
+              </div>
+              <form action="" method="post" id="signup-form">
+                <label for="signup-userlogin">
+                  <input type="text" name="signup-userlogin" id="signup-userlogin" placeholder="Логин" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="signup-password">
+                  <input type="password" name="signup-password" id="signup-password" placeholder="Пароль" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <div class="popup__checkbox-wrapper">
+                  <input class="visually-hidden" type="checkbox" name="remember" id="remember" checked>
+                  <label for="remember">Запомнить меня</label>
+                  <button type="button" class="popup__forgot-password-link open-popup pass-restore-btn"
+                    data-value="#pass-restore">Забыли
+                    пароль?</button>
+                </div>
+                <button type="submit" class="popup__submit-btn">Вход</button>
+                <div class="popup__signup-wrapper">
+                  <span>Нет аккаунта?</span>
+                  <button type="button" class="popup__signup-btn open-popup signup-btn"
+                    data-value="#signup">Регистрация</button>
+                </div>
+              </form>
+            </div>
+            <div class="popup__image">
+              <img src="./img/popup-bg.png" srcset="./img/popup-bg@2x.png 2x" width="455" height="635" loading="lazy"
+                alt="">
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--pass-restore" id="pass-restore">
+            <div class="popup__content-inner popup__content-inner--pass-restore pass-restore">
+              <div class="pass-restore__content">
+                <ul class="pass-restore__slides-list list-reset">
+                  <li class="pass-restore__slides-item active" id="reset-slide_1">
+                    <h3>Забыли пароль?</h3>
+                    <p>Не переживайте. Введите почту и мы отправим инструкции</p>
+                    <form id="pass-restore-email-form" action="" method="post">
+                      <label for="pass-restore-email">
+                        <input type="email" name="pass-restore-email" id="pass-restore-email" placeholder="Ваш E-mail"
+                          required>
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--email"
+                        data-value="#reset-slide_2" data-dot="#pag_2">
+                        <span>Сбросить пароль</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <button type="button"
+                      class="pass-restore__login-btn pass-restore__login-btn--exit open-popup login-btn"
+                      data-value="#login">←
+                      Назад</button>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_2">
+                    <h3>Сброс пароля</h3>
+                    <p>Отправили вам код на <span class="pass-restore__email">mail@mail.ru</span></p>
+                    <form id="pass-restore-code-form" action="" method="post">
+                      <div class="pass-restore__inputs pin">
+                        <input type="number" name="pass-restore-code_1" id="pass-restore-code_1" value="" autofocus>
+                        <input type="number" name="pass-restore-code_2" id="pass-restore-code_2" value="">
+                        <input type="number" name="pass-restore-code_3" id="pass-restore-code_3" value="">
+                        <input type="number" name="pass-restore-code_4" id="pass-restore-code_4" value="">
+                        <input type="number" name="pass-restore-code_5" id="pass-restore-code_5" value="">
+                        <input type="number" name="pass-restore-code_6" id="pass-restore-code_6" value="">
+                        <input type="hidden" name="pincode-result">
+                        <span class="error-message">Не подходит :( Попробуйте снова</span>
+                      </div>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--code"
+                        data-value="#reset-slide_3" data-dot="#pag_3">
+                        <span>Далее</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <div class="pass-restore__btn-wrapper">
+                      <span>Не пришел код?</span>
+                      <button type="button" class="pass-restore__btn pass-restore__btn--resend"
+                        data-value="#reset-slide_1" data-dot="#pag_1">Отправить еще раз</button>
+                    </div>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_3">
+                    <h3>Введите новый пароль</h3>
+                    <p>Не менее 8 знаков</p>
+                    <form id="pass-restore-pass-form" action="" method="post">
+                      <input type="text" name="pass-restore-pass" id="pass-restore-pass_1" placeholder="Введите пароль"
+                        pattern="[0-9a-zA-Z!@#$%^&*]{8,}" title="Не менее 8 знаков" required>
+                      <label for="pass-restore-pass_1">Ваш пароль
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <input type="text" name="pass-restore-pass" id="pass-restore-pass_2" placeholder="Подтверждение"
+                        pattern="[0-9a-zA-Z!@#$%^&*]{8,}" title="Не менее 8 знаков" required>
+                      <label for="pass-restore-pass_2">Подтвердите пароль
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--pass"
+                        data-value="#reset-slide_4" data-dot="#pag_4">
+                        <span>Сбросить пароль</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <button type="button" class="pass-restore__btn pass-restore__btn--return"
+                      data-value="#reset-slide_2" data-dot="#pag_2">←
+                      Назад</button>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_4">
+                    <h3>Готово!</h3>
+                    <p>Пароль сброшен</p>
+                    <button type="button"
+                      class="pass-restore__login-btn pass-restore__login-btn--completed open-popup login-btn"
+                      data-value="#login">Войти</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="pass-restore__pagination">
+                <ul class="pass-restore__pagination-list list-reset">
+                  <li class="pass-restore__pagination-item active" id="pag_1">
+                    <p>1</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_2">
+                    <p>2</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_3">
+                    <p>3</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_4">
+                    <p>4</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--admin" id="admin">
+            <div class="popup__content-inner popup__content-inner--admin admin-popup">
+              <h2>Закрытый контент</h2>
+              <p>Войдите или
+                <button type="button" class="admin-popup__signup-btn open-popup signup-btn" data-value="#signup">
+                  <span>зарегистрируйтесь</span>
+                </button>
+              </p>
+              <form action="" method="post" id="admin-login-form">
+                <label for="admin-userlogin">
+                  <input type="text" name="admin-userlogin" id="admin-userlogin" placeholder="Login" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="admin-password">
+                  <input type="password" name="admin-password" id="admin-password" placeholder="Password" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <button type="button" class="admin-popup__password-toggle-btn">Показать</button>
+                <button type="submit" form="admin-login-form" class="admin-popup__submit-btn">Войти</button>
+              </form>
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--edit" id="edit">
+            <div class="popup__content-inner popup__content-inner--edit custom-edit-popup">
+              <h2>Редактирование</h2>
+              <form action="" method="post" id="custom-edit-form">
+                <label for="input_1">
+                  <input type="text" name="input_1" id="input_1" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_2">
+                  <input type="text" name="input_1" id="input_2" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_3">
+                  <input type="text" name="input_1" id="input_3" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_4">
+                  <input class="invalid" type="text" name="input_1" id="input_4" placeholder="Input label text">
+                  <span class="error-message active">Заполните это поле</span>
+                </label>
+                <button type="submit" form="admin-login-form" class="custom-edit-popup__submit-btn">Сохранить</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- END MAIN POPUP -->
+
+  <!-- COOKIES POPUP -->
+
+  <div class="cookies-popup custom-popup" id="cookies-popup"> <!--add class "active" to show the popup-->
+    <div class="cookies-popup__content">
+      <h2>Уведомление</h2>
+      <p>Этот сайт использует файлы cookies
+        и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения
+        работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически
+        соглашаетесь с использованием данных технологий.</p>
+      <button type="button" class="cookies-popup__submit-btn" data-close-btn>Принять</button>
+    </div>
+  </div>
+
+<!-- END COOKIES POPUP -->
+
+  <!-- ALERT POPUP -->
+
+  <div class="alert-popup custom-popup" id="alert-popup"> <!--add class "active" to show the popup-->
+    <button type="button" class="alert-popup__close-btn" data-close-btn></button>
+    <div class="alert-popup__content alert-popup__content--error">
+      <p>Wrong password!</p>
+    </div>
+    <!-- <div class="alert-popup__content alert-popup__content--success">
+      <p>Success!</p>
+    </div> -->
+  </div>
+
+  <!-- END ALERT POPUP -->
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
