@@ -301,10 +301,6 @@ input[type=url].invalid {
   overflow: hidden;
 }
 
-.scroll-lock {
-  overflow: hidden;
-}
-
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -11536,8 +11532,6 @@ label:focus ~ .set-rating__focus {
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .team-popup {
@@ -11554,6 +11548,7 @@ label:focus ~ .set-rating__focus {
   min-height: -moz-fit-content;
   min-height: fit-content;
   min-width: 350px;
+  width: 78%;
   padding: 15px 100px 15px 19px;
   background: #262832;
   border-radius: 30px;
@@ -13218,7 +13213,7 @@ label:focus ~ .set-rating__focus {
     display: block;
     position: fixed;
     bottom: 0;
-    left: 49.5%;
+    left: 50%;
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
