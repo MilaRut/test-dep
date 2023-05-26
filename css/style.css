@@ -13219,11 +13219,12 @@ label:focus ~ .set-rating__focus {
     display: block;
     position: fixed;
     bottom: 0;
-    left: 50%;
+    left: calc(50% - 2px);
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    min-width: 350px;
+    width: 78%;
+    min-width: 354px;
     padding: 10px;
     background: #15171E;
     border: none;
