@@ -301,6 +301,10 @@ input[type=url].invalid {
   overflow: hidden;
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -11532,6 +11536,8 @@ label:focus ~ .set-rating__focus {
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .team-popup {
@@ -11744,12 +11750,11 @@ label:focus ~ .set-rating__focus {
   -webkit-transform: translateY(-20%);
   -ms-transform: translateY(-20%);
   transform: translateY(-20%);
-  will-change: transform;
-  -webkit-transition: -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-  transition: -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-  -o-transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1), -webkit-transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  will-change: transform, opacity;
+  -webkit-transition: all 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  -o-transition: all 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  transition: all 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  opacity: 0.6;
 }
 
 .team__image::before {
@@ -11792,6 +11797,7 @@ label:focus ~ .set-rating__focus {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
