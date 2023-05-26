@@ -11519,7 +11519,7 @@ label:focus ~ .set-rating__focus {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgba(0, 0, 0, 0.8);
   opacity: 0;
   pointer-events: none;
