@@ -11526,7 +11526,7 @@ label:focus ~ .set-rating__focus {
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .team-popup-overlay.active {
