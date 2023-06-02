@@ -1407,8 +1407,7 @@ div.ck-color-table {
   margin-right: 10px;
 }
 
-.header__logo span,
-.header__forum-link span {
+.header-hover span {
   display: none;
 }
 
@@ -1416,13 +1415,11 @@ div.ck-color-table {
   opacity: 0.5;
 }
 
-.header__logo:hover,
-.header__forum-link:hover {
+.header-hover:hover {
   position: relative;
 }
 
-.header__logo:hover span,
-.header__forum-link:hover span {
+.header-hover:hover span {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -13442,8 +13439,7 @@ label:focus ~ .set-rating__focus {
     display: none;
   }
 
-  .header__logo:hover span,
-  .header__forum-link:hover span {
+  .header-hover:hover span {
     display: none;
   }
 
