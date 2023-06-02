@@ -1385,25 +1385,7 @@ div.ck-color-table {
 }
 
 .header__mobile-links {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  background: #474C53;
-  border-radius: 15px;
-  margin-top: 8px;
-  padding: 10px;
-}
-
-.header__mobile-links a {
-  font-family: "Inter", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  color: #ffffff;
-  color: #14161B;
-  margin: 5px 0;
-  white-space: nowrap;
+  display: none;
 }
 
 .header__divider {
@@ -1454,14 +1436,7 @@ div.ck-color-table {
   border-radius: 70px;
   padding: 3px 10px;
   margin-top: 10px;
-}
-
-.header__forum-link span {
-  min-width: 157px;
-}
-
-.header__mobile-links {
-  display: none;
+  white-space: nowrap;
 }
 
 .header__partner-logo {
@@ -13430,6 +13405,35 @@ label:focus ~ .set-rating__focus {
     cursor: pointer;
   }
 
+  .header__mobile-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    background: #474C53;
+    border-radius: 15px;
+    margin-top: 8px;
+    padding: 10px;
+  }
+
+  .header__mobile-links.active a {
+    font-family: "Inter", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    color: #ffffff;
+    color: #14161B;
+    margin: 5px 0;
+    white-space: nowrap;
+  }
+
   .header__divider {
     display: none;
   }
@@ -13441,16 +13445,6 @@ label:focus ~ .set-rating__focus {
   .header__logo:hover span,
   .header__forum-link:hover span {
     display: none;
-  }
-
-  .header__mobile-links.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
   }
 
   .header__partner-logo {
