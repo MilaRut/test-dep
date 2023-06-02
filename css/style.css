@@ -1385,7 +1385,9 @@ div.ck-color-table {
 }
 
 .header__mobile-links {
-  min-width: 180px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   background: #474C53;
   border-radius: 15px;
   margin-top: 8px;
@@ -1400,7 +1402,8 @@ div.ck-color-table {
   line-height: 1;
   color: #ffffff;
   color: #14161B;
-  margin-bottom: 5px;
+  margin: 5px 0;
+  white-space: nowrap;
 }
 
 .header__divider {
