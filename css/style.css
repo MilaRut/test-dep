@@ -6093,7 +6093,7 @@ progress::-webkit-progress-value {
 
 .article__author-img {
   position: relative;
-  min-width: 36px;
+  width: 36px;
   height: 36px;
   background: url("../img/admin-icon.png") center no-repeat;
   background-size: cover;
@@ -12884,6 +12884,19 @@ label:focus ~ .set-rating__focus {
     margin-bottom: 17px;
   }
 
+  .article__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+  }
+
   .article__author p,
   .article__author a {
     font-size: 14px;
@@ -12897,9 +12910,7 @@ label:focus ~ .set-rating__focus {
   .article__text-heading {
     position: relative;
     display: block;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -14009,17 +14020,6 @@ label:focus ~ .set-rating__focus {
   .article__cover p {
     bottom: 19px;
     right: 19px;
-  }
-
-  .article__info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    margin-bottom: 3px;
   }
 
   .article__author {
