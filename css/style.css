@@ -12897,6 +12897,10 @@ label:focus ~ .set-rating__focus {
     margin-bottom: 3px;
   }
 
+  .article__author {
+    margin-bottom: 15px;
+  }
+
   .article__author p,
   .article__author a {
     font-size: 14px;
@@ -14031,10 +14035,6 @@ label:focus ~ .set-rating__focus {
   .article__cover p {
     bottom: 19px;
     right: 19px;
-  }
-
-  .article__author {
-    margin-bottom: 15px;
   }
 
   .article__author p,
