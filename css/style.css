@@ -6093,7 +6093,7 @@ progress::-webkit-progress-value {
 
 .article__author-img {
   position: relative;
-  min-width: 36px;
+  width: 36px;
   height: 36px;
   background: url("../img/admin-icon.png") center no-repeat;
   background-size: cover;
@@ -12907,6 +12907,17 @@ label:focus ~ .set-rating__focus {
     margin-right: 13px;
   }
 
+  .article__tags-list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .article__tags-item {
+    margin-left: 0;
+    margin-right: 4px;
+  }
+
   .article__text-heading {
     position: relative;
     display: block;
@@ -14030,17 +14041,6 @@ label:focus ~ .set-rating__focus {
   .article__author a {
     width: 100%;
     margin: 0;
-  }
-
-  .article__tags-list {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .article__tags-item {
-    margin-left: 0;
-    margin-right: 4px;
   }
 
   .article__image {
