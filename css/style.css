@@ -6093,7 +6093,7 @@ progress::-webkit-progress-value {
 
 .article__author-img {
   position: relative;
-  width: 36px;
+  min-width: 36px;
   height: 36px;
   background: url("../img/admin-icon.png") center no-repeat;
   background-size: cover;
