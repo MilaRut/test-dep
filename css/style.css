@@ -5412,7 +5412,7 @@ progress::-webkit-progress-value {
   width: 100%;
   height: 205px;
   border-radius: 20px 20px 0px 0px;
-  padding: 12px 19px;
+  padding: 10px;
   overflow: hidden;
 }
 
@@ -5444,7 +5444,7 @@ progress::-webkit-progress-value {
   background-color: #ffffff;
   margin-right: 7px;
   margin-bottom: 5px;
-  padding: 8px;
+  padding: 0px 5px 4px;
   border-radius: 5px;
   z-index: 100;
 }
@@ -5453,7 +5453,7 @@ progress::-webkit-progress-value {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1;
   color: #ffffff;
   color: #14161B;
@@ -5503,7 +5503,6 @@ progress::-webkit-progress-value {
 .blog__list--second .blog__article-image {
   width: 100%;
   height: 214px;
-  padding: 20px;
 }
 
 .blog__list--second .blog__article-text {
@@ -6790,7 +6789,9 @@ progress::-webkit-progress-value {
   max-width: 111px;
   min-width: 53px;
   height: 53px;
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11952,16 +11953,16 @@ label:focus ~ .set-rating__focus {
 }
 
 @media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-
   .branding {
     display: none;
   }
 }
 
 @media (max-width: 1279px) {
+  .container {
+    padding: 0 20px;
+  }
+
   .header-nav__content {
     padding: 20px;
     -webkit-column-gap: 40px;
@@ -12323,10 +12324,6 @@ label:focus ~ .set-rating__focus {
 }
 
 @media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
-  }
-
   .header__search {
     display: none;
   }
@@ -13913,7 +13910,12 @@ label:focus ~ .set-rating__focus {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-left: -15px;
     gap: 0;
+  }
+
+  .blog__item {
+    margin: 0 15px 20px;
   }
 
   .blog__item.pinned::before {
@@ -13934,7 +13936,6 @@ label:focus ~ .set-rating__focus {
   .blog__tags-item {
     margin-bottom: 0;
     margin-top: 5px;
-    padding: 4px 7px 7px;
   }
 
   .blog__article-tag {
