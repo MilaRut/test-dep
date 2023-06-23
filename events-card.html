@@ -29,12 +29,10 @@
         <div class="header__logo-wrapper">
           <div class="header__logo header-hover">
             <a href="index.html">
-              <img src="./img/svg/cpa-logo.svg" width="190" height="29"
-                alt="CPA Club logo.">
+              <img src="./img/svg/cpa-logo.svg" width="190" height="29" alt="CPA Club logo.">
             </a>
             <button type="button" class="header__logo-btn-mob">
-              <img src="./img/svg/cpa-logo.svg" width="190" height="29"
-                alt="CPA Club logo."></button>
+              <img src="./img/svg/cpa-logo.svg" width="190" height="29" alt="CPA Club logo."></button>
             <span>На главную сайта</span>
             <div class="header__mobile-links">
               <a href="#">← На главную форума</a>
@@ -44,7 +42,10 @@
           <div class="header__divider"></div>
           <div class="header__forum-link header-hover">
             <a href="#">
-              <img src="./img/svg/header-forum.svg" width="114" height="26" alt="CPA Club Forum.">
+              <img class="forum-img-ru" src="./img/svg/header-forum-ru.svg" width="114" height="26"
+                alt="CPA Club Forum.">
+              <img class="forum-img-en" src="./img/svg/header-forum-en.svg" width="114" height="26"
+                alt="CPA Club Forum.">
             </a>
             <span>На главную форума</span>
           </div>
@@ -281,7 +282,7 @@
 
             <div class="events-card__slider slider">
               <ul class="events-card__slider-list list-reset">
-                <li class="events-card__slider-item slide active">
+                <li class="events-card__slider-item slide">
                   <img src="./img/events-card_img-1.png" loading="lazy" width="1160" height="639"
                     alt="Фото с мероприятия.">
                 </li>
@@ -314,32 +315,7 @@
                     alt="Фото с мероприятия.">
                 </li>
               </ul>
-              <ul class="events-card__slider-thumbs-list list-reset">
-                <li class="events-card__slider-thumbs-item thumbs active">
-                  <img src="./img/events-card_thumbs-1.png" loading="lazy" width="160" height="89" alt="">
-                </li>
-                <li class="events-card__slider-thumbs-item thumbs">
-                  <img src="./img/events-card_thumbs-2.png" loading="lazy" width="160" height="89" alt="">
-                </li>
-                <li class="events-card__slider-thumbs-item thumbs">
-                  <img src="./img/events-card_thumbs-3.png" loading="lazy" width="160" height="89" alt="">
-                </li>
-                <li class="events-card__slider-thumbs-item thumbs">
-                  <img src="./img/events-card_thumbs-4.png" loading="lazy" width="160" height="89" alt="">
-                </li>
-                <li class="events-card__slider-thumbs-item thumbs">
-                  <img src="./img/events-card_thumbs-5.png" loading="lazy" width="160" height="89" alt="">
-                </li>
-                <li class="events-card__slider-thumbs-item thumbs">
-                  <img src="./img/events-card_thumbs-6.png" loading="lazy" width="160" height="89" alt="">
-                </li>
-                <li class="events-card__slider-thumbs-item thumbs">
-                  <img src="./img/events-card_thumbs-7.png" loading="lazy" width="160" height="89" alt="">
-                </li>
-                <li class="events-card__slider-thumbs-item thumbs">
-                  <img src="./img/events-card_thumbs-8.png" loading="lazy" width="160" height="89" alt="">
-                </li>
-              </ul>
+              <div class="events-card__slider-thumbs-list"></div>
               <button class="events-card__slider-btn events-card__slider-btn--prev" type="button"
                 aria-label="Предыдущий слайд">
                 <svg class="active" width="26" height="16" fill="currentColor">
@@ -382,8 +358,7 @@
 
               <div class="events-card__video-wrapper">
                 <div class="events-card__video video is-active">
-                  <a href="https://skydubai.com/wp-content/uploads/2022/09/Emirates-Video-with-logo-in-the-middle.mp4"
-                    class="events-card__video-link video__link">
+                  <a href="https://www.youtube.com/embed/0jtGib2pCSA" class="events-card__video-link video__link">
                     <img class="events-card__video-poster video__poster" src="./img/video-cover.png" loading="lazy"
                       width="889" height="438" alt="Видео с мероприятия.">
                   </a>
@@ -484,7 +459,6 @@
               </ul>
               <button class="events-card__reviews-btn">Оставить отзыв</button>
             </div>
-
           </section>
         </div>
       </div>
