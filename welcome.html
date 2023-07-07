@@ -31,7 +31,8 @@
 <body>
   <div class="wrapper">
     <div id="top-container"></div>
-    <header class="header" id="header">
+    <div id="branding-container-top" class="branding"></div>
+    <header class="header">
       <div class="container">
         <div class="header__logo-wrapper">
           <div class="header__logo header-hover">
@@ -49,8 +50,10 @@
           <div class="header__divider"></div>
           <div class="header__forum-link header-hover">
             <a href="#">
-              <img class="forum-img-ru" src="./img/svg/header-forum-ru.svg" width="114" height="26" alt="CPA Club Forum.">
-              <img class="forum-img-en" src="./img/svg/header-forum-en.svg" width="114" height="26" alt="CPA Club Forum.">
+              <img class="forum-img-ru" src="./img/svg/header-forum-ru.svg" width="114" height="26"
+                alt="CPA Club Forum.">
+              <img class="forum-img-en" src="./img/svg/header-forum-en.svg" width="114" height="26"
+                alt="CPA Club Forum.">
             </a>
             <span>На главную форума</span>
           </div>
@@ -63,7 +66,7 @@
           </div>
         </div>
 
-        <!-- <div class="header__search search">
+        <div class="header__search search">
           <form action="" method="get" id="header-search-form">
             <input name="search" placeholder="Поиск по форуму" type="search">
             <button class="search__btn" type="submit">
@@ -88,7 +91,7 @@
               </li>
             </ul>
           </div>
-        </div> -->
+        </div>
 
         <div class="header__user-menu user-menu">
           <div class="user-menu__lang-switcher">
@@ -98,7 +101,7 @@
               <a class="user-menu__lang-link" href="#">UK</a>
             </div>
           </div>
-          <!-- <div class="user-menu__unlogged">
+          <div class="user-menu__unlogged">
             <button type="button" class="user-menu__btn user-menu__btn--login open-popup login-btn"
               data-value="#login">Вход</button>
             <button type="button" class="user-menu__btn user-menu__btn--signup open-popup signup-btn"
@@ -146,7 +149,7 @@
               </svg>
               <span>Выход</span>
             </button>
-          </div> -->
+          </div>
           <button type="button" class="user-menu__nav-btn" aria-label="Открыть меню."></button>
           <nav class="header__nav header-nav">
             <div class="header-nav__content">
@@ -159,9 +162,23 @@
                 </li>
                 <li class="header-nav__item header-nav__item--catalog">
                   <a class="header-nav__link" href="catalog.html">
-                    <h3>Компании</h3>
+                    <h3>
+                      <span class="header-nav__heading">Компании</span>
+                      <span class="header-nav__heading--wc">Каталог</span>
+                    </h3>
                     <p>Рейтинг компаний в отрасли</p>
                   </a>
+                  <ul class="wc__catalog-list list-reset">
+                    <li class="wc__catalog-item">
+                      <a href="#">Пункт списка</a>
+                    </li>
+                    <li class="wc__catalog-item">
+                      <a href="#">Пункт списка</a>
+                    </li>
+                    <li class="wc__catalog-item">
+                      <a href="#">Пункт списка</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="header-nav__item header-nav__item--courses">
                   <a class="header-nav__link" href="courses.html">
@@ -171,7 +188,10 @@
                 </li>
                 <li class="header-nav__item header-nav__item--events">
                   <a class="header-nav__link" href="events.html">
-                    <h3>Мероприятия</h3>
+                    <h3>
+                      <span class="header-nav__heading">Мероприятия</span>
+                      <span class="header-nav__heading--wc">Ивенты</span>
+                    </h3>
                     <p>Информация о формате, программе, спикерах, шоу</p>
                   </a>
                 </li>
@@ -196,6 +216,48 @@
                   <img src="" width="290" height="76" alt="">
                 </a> -->
               </div>
+            </div>
+
+            <div class="header-nav__socials">
+              <ul class="header-nav__socials-list list-reset">
+                <li class="header-nav__socials-item">
+                  <a class="header-nav__socials-link" href="https://t.me/cpaclubmain" target="_blank" aria-label="Telegram">
+                    <svg width="24" height="24" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#sc-tg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-nav__socials-item">
+                  <a class="header-nav__socials-link" href="https://instagram.com/cpa_club/" target="_blank" aria-label="Instagram">
+                    <svg width="24" height="24" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#sc-ig"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-nav__socials-item">
+                  <a class="header-nav__socials-link" href="https://facebook.com/cpaclub1" target="_blank" aria-label="Facebook">
+                    <svg width="24" height="24" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#sc-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-nav__socials-item">
+                  <a class="header-nav__socials-link" href="https://linkedin.com/company/cpa-club" target="_blank"
+                    aria-label="Linkedin">
+                    <svg width="24" height="24" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#sc-li"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-nav__socials-item">
+                  <a class="header-nav__socials-link" href="https://www.youtube.com/@cpaclub6284" target="_blank"
+                    aria-label="Youtube">
+                    <svg width="24" height="24" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#sc-yt"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </nav>
         </div>
@@ -276,7 +338,7 @@
               </svg>
             </div>
             <div class="wc-signup__heading">
-              <h2><b>Присоединяйтесь</b> к&nbsp;нашему комьюнити</h2>
+              <h2><b>Присоединяйтесь</b><br>к&nbsp;нашему комьюнити на&nbsp;форуме</h2>
             </div>
             <a href="https://forum.cpa.club/register.php" target="_blank" class="wc-btn wc-signup__btn">
               <span class="wc-signup__reg">Pегистрация</span>
@@ -524,7 +586,7 @@
               </svg>
             </div>
             <div class="wc-signup__heading">
-              <h2><b>Присоединяйтесь</b> к&nbsp;нашему комьюнити</h2>
+              <h2><b>Присоединяйтесь</b><br>к&nbsp;нашему комьюнити на&nbsp;форуме</h2>
             </div>
             <a href="https://forum.cpa.club/register.php" target="_blank" class="wc-btn wc-signup__btn">
               <span class="wc-signup__reg">Pегистрация</span>
@@ -729,7 +791,8 @@
             <textarea id="comment" name="comment" required data-input></textarea>
             <label for="comment">Ваш вопрос</label>
           </div>
-          <button class="wc-btn modal__submit-btn" data-open-modal data-modal-id="#modal-success" type="submit">Отправить</button>
+          <button class="wc-btn modal__submit-btn" data-open-modal data-modal-id="#modal-success"
+            type="submit">Отправить</button>
         </form>
       </div>
     </div>
@@ -778,7 +841,8 @@
               </a>
             </li>
             <li class="wc-socials__item">
-              <a class="wc-socials__link" href="https://www.youtube.com/@cpaclub6284" target="_blank" aria-label="Youtube">
+              <a class="wc-socials__link" href="https://www.youtube.com/@cpaclub6284" target="_blank"
+                aria-label="Youtube">
                 <svg width="24" height="24" fill="currentColor">
                   <use xlink:href="./img/sprite.svg#sc-yt"></use>
                 </svg>
