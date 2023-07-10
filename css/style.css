@@ -16900,6 +16900,10 @@ label:focus ~ .set-rating__focus {
     margin-bottom: 10px;
   }
 
+  .wc-style.wrapper .header-nav__item:hover {
+    background-color: transparent;
+  }
+
   .wc-style.wrapper .header-nav__link h3 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
